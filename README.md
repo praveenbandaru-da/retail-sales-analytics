@@ -37,10 +37,10 @@ Full findings and business recommendations: [`reports/executive_summary.docx`](r
 │   ├── merge_files.py          # Builds the merged flat table from the 3 cleaned tables
 │   ├── 02_eda.py               # Exploratory analysis: distributions, trends, segments
 │   └── 03_stats.py             # Hypothesis testing, confidence intervals, ANOVA, chi-square
-├── charts/                     # EDA chart outputs (Python/Matplotlib)
 ├── dashboard/                  # Tableau (.twbx) and Power BI (.pbix) dashboard files
 └── reports/
-    └── executive_summary.docx  # Leadership-facing summary report
+    ├── executive_summary.docx  # Leadership-facing summary report
+    └── *.png                   # EDA chart outputs (distributions, trends, segments, correlations)
 ```
 
 ## Data Model
