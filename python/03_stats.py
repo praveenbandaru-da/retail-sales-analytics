@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 from scipy import stats
 
-df = pd.read_csv("data\cleaned\merged_flat_table.csv", parse_dates=['order_date'])
+df = pd.read_csv("data/cleaned/merged_flat_table.csv", parse_dates=['order_date'])
 
 print("="*70)
 print("1. CONFIDENCE INTERVAL: Average Order Value (95% CI)")
