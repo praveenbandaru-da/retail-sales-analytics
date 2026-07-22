@@ -27,7 +27,7 @@ import matplotlib.pyplot as plt
 # ============================================================================
 
 # Load the raw product dimension table
-df = pd.read_csv(r'C:\Users\ramub\Desktop\sql-data-analytics-project\sql-data-analytics-project\datasets\flat-files\dim_products.csv')
+df = pd.read_csv('data/raw/dim_products.csv')
 
 print("=" * 70)
 print("ORIGINAL DATA PROFILE")
@@ -285,7 +285,7 @@ print("\nVisualization saved to: data_cleaning_report.png")
 # STEP 8: SAVE CLEANED DATA
 # ============================================================================
 
-df_clean.to_csv(r'C:\Users\ramub\Desktop\sales-analytics-project\data\cleaned\dim_products_cleaned.csv', index=False)
+df_clean.to_csv('data/cleaned/dim_products_cleaned.csv', index=False)
 
 print("\n" + "=" * 70)
 print("CLEANING COMPLETE")
