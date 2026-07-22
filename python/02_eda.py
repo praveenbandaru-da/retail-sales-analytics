@@ -16,8 +16,8 @@ import matplotlib.ticker as mticker
 plt.rcParams.update({'figure.dpi': 110, 'font.size': 10,
                       'axes.spines.top': False, 'axes.spines.right': False})
 
-CLEAN = r"data\cleaned"
-CHARTS = r"reports"
+CLEAN = "data\cleaned"
+CHARTS = "reports"
 
 cust = pd.read_csv(f"{CLEAN}/dim_customers_cleaned.csv", parse_dates=['birthdate', 'create_date'])
 prod = pd.read_csv(f"{CLEAN}/dim_products_cleaned.csv", parse_dates=['start_date'])
