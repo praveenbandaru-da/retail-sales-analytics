@@ -14,7 +14,7 @@ across every line item and bloat file size unnecessarily.
 """
 import pandas as pd
 
-CLEAN_DIR = r"C:\Users\ramub\Desktop\sales-analytics-project\data\cleaned"
+CLEAN_DIR = "data\cleaned"
 
 # ---------- Load the three cleaned tables ----------
 customers = pd.read_csv(f"{CLEAN_DIR}/dim_customers_cleaned.csv")
