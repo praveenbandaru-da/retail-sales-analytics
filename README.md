@@ -67,7 +67,7 @@ dim_customers (18,484)         dim_products (295)
 
 ## Tools Used
 
-`Python (Pandas, NumPy, Matplotlib, SciPy)` · `SQL Server / T-SQL` · `Tableau` · `Power BI` · `Excel`
+`Python (Pandas, NumPy, Matplotlib, SciPy)` · `SQL Server / T-SQL` · `Power BI` · `Excel`
 
 ## Author
 
