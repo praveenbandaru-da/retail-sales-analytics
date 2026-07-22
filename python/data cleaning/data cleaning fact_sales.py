@@ -23,7 +23,7 @@ warnings.filterwarnings('ignore')
 # =============================================================================
 
 # Load the raw CSV file
-df = pd.read_csv(r'C:\Users\ramub\Desktop\sql-data-analytics-project\sql-data-analytics-project\datasets\flat-files\fact_sales.csv')
+df = pd.read_csv('data/raw/fact_sales.csv')
 
 print("=" * 70)
 print("STEP 1: LOAD THE DATA")
@@ -244,7 +244,7 @@ for col in columns_to_drop:
         df_clean.drop(columns=[col], inplace=True)
 
 # Save to CSV
-output_path = r'C:\Users\ramub\Desktop\sales-analytics-project\data\cleaned\fact_sales_cleaned.csv'
+output_path = 'data/cleaned/fact_sales_cleaned.csv'
 df_clean.to_csv(output_path, index=False)
 print(f"\n✅ Cleaned data saved to: {output_path}")
 print(f"   File size: {len(df_clean)} rows x {len(df_clean.columns)} columns")
