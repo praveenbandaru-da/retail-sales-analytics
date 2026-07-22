@@ -4,7 +4,7 @@ import numpy as np
 # ------------------------------------------------------------------
 # 1. LOAD DATA
 # ------------------------------------------------------------------
-input_path = r'C:\Users\ramub\Desktop\sql-data-analytics-project\sql-data-analytics-project\datasets\flat-files\dim_customers.csv'
+input_path = 'data/raw/dim_customers.csv'
 df = pd.read_csv(input_path)
 
 # ------------------------------------------------------------------
@@ -30,7 +30,7 @@ df['gender'] = df['gender'].fillna('Unknown')
 # ------------------------------------------------------------------
 # 3. SAVE CLEANED DATA
 # ------------------------------------------------------------------
-output_path = r'C:\Users\ramub\Desktop\sales-analytics-project\data\cleaned\dim_customers_cleaned.csv'
+output_path = 'data/cleaned/dim_customers_cleaned.csv'
 df.to_csv(output_path, index=False)
 
 # ------------------------------------------------------------------
